@@ -2,14 +2,74 @@
 <html>
 <head>
    <meta charset="utf-8">
+   <link rel="stylesheet" href="style.css">
    <title>
     What is HTTP and HTTPS?
    </title>
 </head>
 <body>
+  <div>
   <nav>
-    <a href="Homepage.html">Home</a>
-  </nav>
-  <p> this is going great!! <p>
+      <h3> Navigation </h3>
+      <a href="Index.html">Home</a>
+      <a href="page1.html">What is HTTP and HTTPS?</a>
+      <a href="page2.html">How is a web page dowloaded?</a>
+      <a href="page3.html">What is a request?</a>
+      <a href="page4.html">When to use GET and post?</a>
+      <a href="page5.html">Citations</a>
+    </nav>
+  </div>
+  <picture>
+    <source media="(max-width: 1400 px)" srcset="images/HTTP_medium.JPG">
+    <source media="(max-width: 500 px)" srcset="images/HTTP_small.JPG">
+    <source media = "(min-width:1400 px) " srcset="images/HTTP.JPG">
+    <img src="images/HTTP.JPG">
+  </picture>
+  
+  <div >
+    <h1 class = "Page_Header">
+    What is HTTP and HTTPS
+    </h1>
+  </div>
+  <div>
+    <h2 class="Subheading">
+      What do they stand for
+    </h2>
+    <p>
+      HTTP stands for Hypertext Transfer Protocol while HTTPS stands for
+      Hypertext Transfer Protocol Secure.
+    </p>
+  </div>
+  <div>
+    <h2 class ="Subheading">
+      What's the point of HTTP
+    </h2>
+    <p>
+      As the name suggests HTTP is the protocol used for the transfer of Hypertext documents over the internet.
+      It is the foundation of data exchange on the web. HTTP can also be used to fetch images and video as
+      well as sending content back to servers like with HTML forms. HTTP is Server-client based with the web
+      browser generally acting as the client. Clients and servers communicate via individual messages.
+      These messages are called requests when the clients send them and responses when the server sends them.
+      The Clients are always the one initiating the requests not the servers<span class="citation">(Mozilla,2022a)</span>.
+    </p>
+  </div>
+
+
+  <div>
+     <h2 class = "Subheading">
+       History of HTTP
+     </h2>
+     <p>
+       The first documented version of HTTP was created by Tim Berners-Lee and his team at CERN between 1989-1991.
+       The first documented version was released in 1991.
+        Later named V0.9 was much simpler than later versions.
+        It only had one method, GET followed by the path to the file.
+        The response would simply be the file requested.   Unlike later versions there was also no HTTP
+        header so only html files could be transferred. HTTPS was created as an encrypted version of HTTP 
+        to be more secure. It was created in 1995 but not being widely used until recently.
+        HTTP is an extentiable protocol being updated over time with the most widely adopted version currently being v1.1<span class="citation">(Mozilla,2022b)</span>..
+     </p>
+   </div>
+
 </body>
 </html>

@@ -2,13 +2,153 @@
 <html>
 <head>
    <meta charset="utf-8">
+   <link rel="stylesheet" href="style.css">
    <title>
     How is a web page dowloaded?
    </title>
 </head>
 <body>
-  <nav>
-    <a href="Homepage.html">Home</a>
-  </nav>
+  <div>
+    <nav>
+      <h3> Navigation </h3>
+      <a href="Index.html">Home</a>
+      <a href="page1.html">What is HTTP and HTTPS?</a>
+      <a href="page2.html">How is a web page dowloaded?</a>
+      <a href="page3.html">What is a request?</a>
+      <a href="page4.html">When to use GET and post?</a>
+      <a href="page5.html">Citations</a>
+    </nav>
+  </div>
+  <div>
+    <h1 class = "Page_Header">
+      How is a web page dowloaded?
+    </h1>
+    <div>
+      <h2>
+       Example of loading in a webpage  
+      </h2>
+      <table>
+        <tr>
+          <th>Name</th>
+          <th>Status</th>
+          <th>Type</th>
+          <th>Initiator</th>
+        </tr>
+        <tr>
+          <td>webclient/</td>
+          <td>302</td>
+          <td>document/Redirect</td>
+          <td>other</td>
+        </tr>
+        <tr>
+          <td>index.html</td>
+          <td>200</td>
+          <td>document</td>
+          <td>(index)</td>
+        </tr>
+        <tr>
+          <td>
+            polyfills.6ebae6ce8bf827d881b7.js
+          </td>
+          <td>200</td>
+          <td>script</td>
+          <td>index.html</td>
+        </tr>
+        <tr>
+          <td>vendor.6ebae6ce8bf827d881b7.js</td>
+          <td>200</td>
+          <td>script</td>
+          <td>index.html</td>
+        </tr>
+        <tr>
+          <td>app-htmlaccess.6ebae6ce8bf827d881b7.js</td>
+          <td>200</td>
+          <td>script</td>
+          <td>index.hmtl</td>
+        </tr>
+        <tr>
+          <td>style.vendor.6ebae6ce8bf827d881b7.css</td>
+          <td>200</td>
+          <td>stylesheet</td>
+          <td>index.html</td>
+        </tr>
+        <tr>
+          <td>style.app-htmlaccess.6ebae6ce8bf827d881b7.css</td>
+          <td>200</td>
+          <td>stylesheet</td>
+          <td>index.html</td>
+        </tr>
+        <tr>
+          <td>info.jsp?_=1660265712825</td>
+          <td>200</td>
+          <td>xhr</td>
+          <td>vendor.6ebae6ce8bf827d881b7.js</td>
+        </tr>
+        <tr>
+          <td>favicon.ico</td>
+          <td>304</td>
+          <td>x-icon</td>
+          <td>other</td>
+        </tr>
+        <tr>
+          <td>en.json?v=19431065&_=1660268157582</td>
+          <td>200</td>
+          <td>xhr</td>
+          <td>vendor.6ebae6ce8bf827d881b7.js</td>
+        </tr>
+        <tr>
+          <td>en_rebrandDisabled.json?v=19431065&_=1660268157583</td>
+          <td>200</td>
+          <td>xhr</td>
+          <td>vendor.6ebae6ce8bf827d881b7.js</td>
+        </tr>
+        <tr>
+          <td>xml</td>
+          <td>200</td>
+          <td>xhr</td>
+          <td>vendor.6ebae6ce8bf827d881b7.js</td>
+        </tr>
+        <tr>
+          <td>logo.png</td>
+          <td>200</td>
+          <td>png</td>
+          <td>vendor.6ebae6ce8bf827d881b7.js</td>
+        </tr>
+        <tr>
+          <td>bg_image.jpg</td>
+          <td>200</td>
+          <td>jpeg</td>
+          <td>style.app-htmlaccess.6ebae6ce8bf827d881b7.css</td>
+        </tr>
+        <tr>
+          <td>icon_settings.svg</td>
+          <td>200</td>
+          <td>svg+xml</td>
+          <td>style.app-htmlaccess.6ebae6ce8bf827d881b7.css</td>
+        </tr>
+        <tr>
+          <td>vmware_logo_footer.svg</td>
+          <td>200</td>
+          <td>svg+xml</td>
+          <td>style.app-htmlaccess.6ebae6ce8bf827d881b7.css</td>
+        </tr>
+      </table>
+      <p>
+        When the page first loads it loads in the file specified by the path section of the 
+        URL via a GET Request. In this example the url is 
+        https://computerlabs.waikato.ac.nz/portal/webclient/. This then loads in the index.html 
+        file via a GET request. The index file then has references 
+        To three javascript files and two CSS files via several GET requests. 
+        The javascript files then load in several different files used to fulfill  
+        different functions. Mostly using GET methods but one of them does use a POST method. 
+        The CSS files interact with the HTML file to style the page they also load in several 
+        images using GET requests. 
+      <p>
+    </div>
+
+  </div>
+
+
+
 </body>
 </html>

@@ -1,16 +1,100 @@
 <!DOCTYPE html>
 <html>
 <head>
-
-
    <meta charset="utf-8">
+   <link rel="stylesheet" href="style.css">
    <title>
     When to use GET and POST?
    </title>
 </head>
 <body>
   <nav>
-    <a href="Homepage.html">Home</a>
+    <h3> Navigation </h3>
+    <a href="Index.html">Home</a>
+    <a href="page1.html">What is HTTP and HTTPS?</a>
+    <a href="page2.html">How is a web page dowloaded?</a>
+    <a href="page3.html">What is a request?</a>
+    <a href="page4.html">When to use GET and post?</a>
+      
   </nav>
+
+  <div>
+    <h1 class = "Page_Header">
+      When to use Get and Post?
+    </h1>
+  </div>
+  <div class="GetVsPost">
+    <div id="get">
+      <h2 class ="Subheading">
+        What does Get do? 
+      </h2>
+      <p>
+        The Get method retrieves a resource from the server. 
+        It is a Safe method meaning that it is intended for information retrieval only. 
+      </p>
+      <h2 class="Subheading">
+        When is Get used?
+      </h2>
+      <p>
+        Get is used whenever the client wants to retrieve data from the server. For example when loading a
+        webpage the client will want to retrieve all the files and images that make up the page.
+      </p>
+      <h2 class="Subheading">
+        Syntax
+      </h2>
+      <p>
+        GET &it;path&it;
+      </p>
+    </div>
+    <div id="post">
+      <h2 class="Subheading">
+        What does POST do?
+      </h2>
+      <p>
+        The POST method sends data from the client to the server. 
+        It is not a safe method meaning that it will have an effect on the server.it is also not impodent 
+        meaning if the method is called successively then there will be a response for each one.
+      </p>
+      <h2 class="Subheading">
+        When is post used 
+      </h2>
+      <p>
+        Post is used when the client wants to send data to the server. 
+        For example filling in forms, signing in, uploading images to a website among other things
+      </p>
+      <h2 class="Subheading">
+        Syntax 
+      </h2>
+      <p>
+        POST &it;path&gt;
+      </p>
+    </div>
+  
+   <div id="GetVsPostT">
+    <table>
+      <tr>
+        <th></th>
+        <th>GET</th>
+        <th>POST</th>
+      </tr>
+      <tr>
+        <td>Request has body</td>
+        <td>No</td>
+        <td>Yes</td>
+      </tr>
+      <tr>
+        <td>Safe</td>
+        <td>Yes</td>
+        <td>No</td>
+      </tr>
+      <tr>
+        <td>Impodent</td>
+        <td>Yes</td>
+        <td>No</td>
+      </tr>
+    </table>
+   </div>
+  </div>
+
 </body>
 </html>

@@ -2,13 +2,125 @@
 <html>
 <head>
    <meta charset="utf-8">
+   <link rel="stylesheet" href="style.css">
    <title>
     What is a request?
    </title>
 </head>
 <body>
-  <nav>
-    <a href="Homepage.html">Home</a>
-  </nav>
+  <div class = "Navigation">
+    <nav>
+      <h3> Navigation </h3>
+      <a href="Index.html">Home</a>
+      <a href="page1.html">What is HTTP and HTTPS?</a>
+      <a href="page2.html">How is a web page dowloaded?</a>
+      <a href="page3.html">What is a request?</a>
+      <a href="page4.html">When to use GET and post?</a>
+      <a href="page5.html">Citations</a>
+    </nav>
+  </div>
+  <div>
+    <h1 class = "Page_Header">
+      What is a request?
+    </h1>
+    <p>
+    A HTTP request is made by a client,to a host, which is located on a server.
+    The purpose of a request is to get access to a resource located on the server.
+    The method used for the request then determines the interaction between the client and the resource.
+    </p>
+
+  </div>
+  <div >
+    <div>
+      <h2 class="Subheading"> How is a request formatted?</h2>
+      <h3 class = "List_Heading"> Format for a request. </h3>
+      <ul class = "list">
+         <li> Request line  </li>
+         <li> Request header fields </li>
+         <li> An empty line </li>
+         <li> Optional HTTP body </li>
+      </ul>
+   </div>
+   <div>
+     <h2> Request line </h2>
+     <p>The Request line consists of at least 3 items<span class="citation">(IBM,2021)</span>. </p>
+       <dl>
+          <dt>A method.</dt>
+          <dd>
+            The method is a one word command that instructs the server what the client wants done to the resource.
+            E.g. The client could ask the server to send that particular resource to the client.
+          </dd>
+          <dt>The path</dt>
+          <dd>
+            The path component for the URL of the server. The path identifies where to find the resource on the  server.
+          </dd>
+          <dt>The HTTP Version number. </dt>
+          <dd>
+            Letting the server know the HTTP specification that the  request is complying too.
+          </dd>
+        </dl>
+        <p>
+          Additional items a request line might include are.
+        </p>
+        <dl>
+         <dt>Query String.</dt>
+          <dd>
+            This provides a string that the resource can use for some process. It is put after the Path
+            and is preceded by a question mark.
+          </dd>
+          <dt>The Scheme and host components of the URL.</dt>
+          <dd>
+            This is also known as the absolute URL. For some versions of HTTP if the Scheme and host components aren’t
+            included in the request then they must be included in a Host header.
+          </dd>
+        </dl>
+     </div>
+     <div>   
+       <h2> Request headers </h2>
+       <p>
+         Headers are written on requests to provide the recipient information from the sender about the message or
+         the way it wants to communicate.
+         This influences the way the recipient will respond to the sender. A Header consists of a name and a value(IBM,2021).
+        </p>
+      </div>  
+      <div>
+      <h2>Message body</h2>
+        <p>
+          The Message body contains the entity body which is the actual content of the request.
+          Not all requests have a message body. For example POST method has a message body consisting
+          of the information being sent to the server while a GET request has no data to send so does not
+          have a message body<span class="citation">(IBM,2021)</span>.
+        </p>
+      </div>
+    </div>
+  <div>
+    <h2>Error Codes</h2>
+    <p>
+      Evey request that is sent to a server is responded with a HTTP status code.
+      Some of  these are used to identify errors. According to <span class="citation">Anicas(2021)</span> common error codes include
+    </p>
+    <dl>
+        <dt>400 - Bad Request</dt>
+        <dd>
+          Occurs when the request sent has invalid syntax
+        </dd>
+        <dt>401-Unauthorized</dt>
+        <dd>
+          Occurs when either the client trying to gain access to the resource
+          hasn’t been authenticated by the server or hasn’t been authenticated correctly.
+        </dd>
+        <dt>404 - Not Found</dt>
+        <dd>
+           Occurs when even though the client can communicate with the server
+           it is unable to find the requested resource.
+        </dd>
+        <dt> 502 - Bad Gateway</dt>
+        <dd>
+          Occurs when the server is unable to connect to its backend servers that actually fulfill the request.
+        </dd>
+      </dl>
+      <img src="images/502.png"
+  </div>
+
 </body>
 </html>
