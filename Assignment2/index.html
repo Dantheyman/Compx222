@@ -1,12 +1,29 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Framingham Risk Score Calaculator</title>
+        <title>Framingham Risk Score Calculator</title>
         <meta charset="utf-8">
+        <script src="project.js"></script>
+        <link rel="stylesheet" type="text/css" href="Style.css"/>
     </head>
     <body>
-        <p>i love this aye!</p>
+        <h1>Framingham Risk Score Calculator</h1>
+        <div id="container">
+
+        
+            <div id="nav">
+                <input type="button" id="genderButton" name="gender" value="Gender/Age" class="button">
+                <input type="button" id="smokerButton" name="smoker" value="Smoking Status" class="button">
+                <input type="button" id="bpButton" name="bp" value="Blood Pressure" class="button">
+                <input type="button" id="cholestrolButton" name="cholestrol" value="Cholesterol" class="button">
+                <input type="button" id="calculateButton" name="calculate" value="Calculate" class="button">
+
+            </div>
+            <div id="calc" class ="page">
+            </div>
+            <div id="restart">
+                <input type="button" id="restartButton" name="restart" value="Restart" class="button">
+            </div>
+        </div>
     </body>
-
-
 </html>

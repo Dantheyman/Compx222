@@ -1,0 +1,93 @@
+body
+{
+    background-color: grey;
+    text-align: center;
+}
+
+
+#calc
+{
+    background-color:white;
+    grid-column:  2/ span 3;
+    grid-row: 2;
+    height: 250px;
+    width:1064px;
+    justify-self: center;
+    display: inline-block;
+    
+
+}
+#nav
+{
+    display: grid;
+    grid-template-columns:  auto auto auto auto auto ;
+    grid-template-rows:  auto  ;
+
+    background-color: blue;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    padding-bottom: 0%;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    width: 1000px;
+    grid-column: 2/span 2;
+    grid-row: 1;
+    justify-self: center;
+
+}
+.button
+{
+    grid-column: 2/span2;
+    grid-row:auto;
+    background-color: #4CAF50; 
+    color: white;
+    padding: 15px 32px;
+    margin: 0%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+#container
+{
+    display: grid; 
+    grid-template-columns:  auto auto auto ; 
+    grid-template-rows: auto auto  auto auto auto  ;
+    align-items: center;
+    justify-content: center;
+}
+
+#genderButton
+{
+    grid-column: 1;
+    grid-row: auto;
+}
+#smokerButton
+{
+    grid-column: 2;
+    grid-row: auto;
+}
+#bpButton
+{
+    grid-column: 3;
+    grid-row: auto;
+}
+#cholestrolButton
+{
+    grid-column: 4;
+    grid-row: auto;
+}
+#calculateButton
+{
+    grid-column: 5;
+    grid-row: auto;
+}
+#restart
+{
+    grid-row:5;
+    grid-column: span 4;
+    background-color: blue;
+ 
+}
